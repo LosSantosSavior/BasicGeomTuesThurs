@@ -7,7 +7,7 @@ public class BasicGeom {
         var ychange = p1.y - p2.y;
 
         //x*x is more efficient than Math.Pow(x, 2)
-        var intermediate = xchange*xchange +ychange-ychange;
+        var intermediate = xchange*xchange +ychange*ychange;
         dist = Math.sqrt(intermediate);
         return dist;
     }
